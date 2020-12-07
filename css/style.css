@@ -1,0 +1,217 @@
+@media(max-width:816px){
+    
+    .carousel-item img{
+ height: 350px !important;
+    }
+
+}
+
+
+
+
+body{background: linear-gradient(110deg, #0EB3D8  50%, #ffed4b 0%);}
+
+a:hover{text-decoration: none!important;}
+
+.carousel-item img{
+object-fit: cover;
+   height: 600px;
+}
+
+.protein,
+.creatin,
+.gainer,
+.amino,
+.bcaa,
+.vitamin{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.protein{background-image: url(../images/protein.png);}
+.creatin{background-image: url(../images/creatin.png);}
+.gainer{background-image: url(../images/gainer.png);}
+.amino{background-image: url(../images/amino.png);}
+.bcaa{background-image: url(../images/bcca.png);}
+.vitamin{background-image: url(../images/animal.png);}
+
+
+
+  
+
+.shake{
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height:200px;
+width: 80px;
+margin: auto;
+}
+
+.shake:hover{
+	animation:shaker 0.3s infinite ;
+}
+
+.first{background-image:url(../images/shaker-1.png);}
+.second{background-image:url(../images/shaker-2.png);}
+.last{background-image:url(../images/shaker-3.png);}
+
+@keyframes shaker{
+	 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(20deg); }
+  20% { transform: translate(-3px, 0px) rotate(15deg); }
+  30% { transform: translate(3px, 2px) rotate(12deg); }
+  40% { transform: translate(1px, -1px) rotate(15deg); }
+  50% { transform: translate(-1px, 2px) rotate(-15deg); }
+  60% { transform: translate(-3px, 1px) rotate(15deg); }
+  70% { transform: translate(3px, 1px) rotate(-10deg); }
+  80% { transform: translate(-1px, -1px) rotate(15deg); }
+  90% { transform: translate(1px, 2px) rotate(15deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.myBg{
+    border:3px solid;
+    background-color:#f2b90d;
+    opacity:0.95;
+}
+
+.opImage{
+   height: 250px;
+    width: 100%;
+    margin-top: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.newAmino{background-image: url(../images/animal-pak.png);}
+
+.text{ 
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+#particles-js{
+   height: 300%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
+.load{height: 100%;
+   top:-5px;
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    background-color:#0eb3d8;
+}
+
+
+
+.loader {
+    top: 150px;
+   margin: auto ;
+    z-index: 99999;
+    width: 250px;
+    height: 250px;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-top: 0.3em solid hotpink;
+    border-radius: 50%;
+    position: relative;
+    animation: rotating 2s ease-in-out infinite;
+    --direction: 1;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: -0.2em;
+}
+
+.loader:before {
+    border-top: 0.3em solid dodgerblue;
+    transform: rotate(120deg);
+}
+
+.loader:after {
+    border-top: 0.3em solid gold;
+    transform: rotate(240deg);
+}
+
+.loader span {
+    position: absolute;
+    color: white;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 10em;
+    font-family: sans-serif;
+    animation: rotating 2s linear infinite;
+    --direction: -1;
+}
+
+@keyframes rotating {
+    50% {
+        transform: rotate(calc(180deg * var(--direction)));
+    }
+
+    100% {
+        transform: rotate(calc(360deg * var(--direction)));
+    }
+}
+
+.facebook ,.instagram{
+ width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  
+  transition: all 0.5s ease;
+}
+
+
+.facebook:hover{
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+
+.instagram:hover{
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+
+
+
+.instagram:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+
+
+
